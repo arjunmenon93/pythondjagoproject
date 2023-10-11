@@ -1,0 +1,165 @@
+{% load static %}
+<html>
+    <head>
+
+    </head>
+</html>
+<style>
+    .showlicence{
+            border: 1px;
+            border-style: solid;
+            height: 900px;
+            width:500px;
+            border-color: rgb(1, 1, 1);
+            font-family: 'Segoe UI';
+            margin:auto;
+            background-color: rgb(81, 99, 188);
+            border-radius: 10px;
+            color: rgb(91, 91, 236);
+            
+            
+            
+            
+        }
+        .test{
+            margin-bottom: 150px;
+        }
+        body{
+            background-color: #050000;
+        }
+        .tabel{
+            margin-left: 50px;
+            margin: top 0px;
+            color: blue;
+        }
+        .head{
+            width:100px;
+            height:100px;
+            margin-left: 350px;
+            margin-top: 20px;
+        }
+        p{
+            color:antiquewhite;
+            
+        }
+        ::-webkit-scrollbar{
+            width: 0px;
+            
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(0, 4, 7);
+            margin-left: 160px;
+            margin-bottom: 0px;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+        .logo{
+              margin-left: 30px;
+             margin-top: 30px;
+             
+        }
+    
+    
+    
+    
+
+        .image{
+        height:150px;
+        border-radius: 50px;
+        width: 170px;
+        }
+
+
+        
+</style>
+<body>
+    <div class="logo">
+        <img class="image"src="{% static 'images/new.png' %}">
+
+    </div>
+    <div class="test">
+
+    </div>
+    <div class="showlicence">
+        <p>LICENCE DETAILS</p>
+        
+        {% for message in messages %}
+        <img src="{{message.img.url}}" alt="" style ="width: 130px;height:100px; margin-left:360px;border-radius: 5px;margin-top: 50px;">;
+        <div class="tabel">
+            <table  cellpadding="0" cellspacing="30">
+             
+                <tr>
+                    <td>NAME</td>
+                    <td>{{message.Name}}</td>
+                </tr>
+                <tr>   
+                    <td>LICENCE ID</td>
+                    <td >{{message.Licenceid}}</td>
+                </tr>
+                <tr>   
+                    <td>ADDRESS</td>
+                    <td >{{message.Address}}</td>
+                </tr>
+                <tr>   
+                    <td>BLOOD GROUP</td>
+                    <td >{{message.Bloodgroup}}</td>
+                </tr>
+                <tr>   
+                    <td>DOB</td>
+                    <td >{{message.Dob}}</td>
+                </tr>
+                <tr>   
+                    <td>VALID FROM</td>
+                    <td >{{message.validfrom}}</td>
+                </tr>
+                <tr>   
+                    <td>VALID TO</td>
+                    <td >{{message.validto}}</td>
+                </tr>
+                <tr>   
+                    <td>VEHICLECLASS</td>
+                    <td >{{message.vehicleclass}}</td>
+                </tr>
+            
+                
+                
+            
+            </tabel>
+            
+            
+
+        </div>
+        
+        
+        {% endfor %}
+
+        {% for message in mk %}
+        <table  cellpadding="0" cellspacing="25">
+             
+            <tr>
+                <td>FINES</td>
+                <td>{{message.fines}}</td>
+            </tr>
+            <tr>
+                <td>DATE AND TIME</td>
+                <td>{{message.date}}</td>
+            </tr>
+            <tr>
+                <td>LOCATION</td>
+                <td>{{message.location}}</td>
+            </tr>
+            <tr>
+                <td>STATUS</td>
+                <td>{{message.status}}</td>
+            </tr>
+        </table>
+        {% endfor %}
+        {% for message in l  %}
+         <p>{{message.all}}</p>
+         {% endfor %}
+
+
+        
+    </div> 
+</body>

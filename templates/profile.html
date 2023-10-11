@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family:Roboto ;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 100vh;
+                position: relative;
+                width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("{% static 'images/ppolice.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+            }
+            .form{
+                top: 15%;
+                left: 35%;
+                background-color: transparent;
+                border-radius: 10px;
+                position: absolute;
+                width: 400px;
+                height:420px;
+                flex-shrink: 0;
+                border: 2px solid rgb(223, 224, 235);
+                margin:auto;
+            
+                
+                
+            }
+            .test{
+                margin-bottom: 50px;
+            }
+            .login{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #00BFFF;
+                font-family: Arial;
+                margin-top: 20px;
+                
+                
+            }
+            .username{
+
+                
+                
+                background-color: transparent;
+                margin: 9px;
+                
+                width: 210px;
+                padding: 6px 10px;
+                border-radius: 5px;
+                 text-align: center;
+                 color: black;
+                 font-family: 'Segoe UI';
+                 font-size: 15px;
+                 height: 30px;
+                 
+                 margin-bottom: 20px;
+                 
+                 
+                 
+                 
+
+                
+            }
+            .two{
+                background-color: #fff;
+                margin: 7px;
+                border: 1.5px solid rgb(200, 200, 200);
+                width: 210px;
+                padding: 6px 10px;
+                border-radius: 5px;
+                 text-align: center;
+                 color: black;
+                 font-family: 'Segoe UI';
+                 font-size: 15px;
+                 margin-top: 0px;
+                 margin-bottom: 12px;
+                 
+            }
+            .three{
+                background-color: #fff;
+                margin: 7px;
+                border: 1.5px solid rgb(200, 200, 200);
+                width: 210px;
+                padding: 6px 20px;
+                border-radius: 5px;
+                 text-align: center;
+                 color: black;
+                 font-family: 'Segoe UI';
+                 font-size: 15px;
+                 
+                 
+                 
+            }
+            
+            
+        
+            
+            .forgot-password{
+                font-size: 13px;
+                font-weight: bold;
+                right: 30px;
+                cursor: pointer;
+                margin-bottom: 0px;
+                
+            }
+            .forgot-password:hover{
+                
+                text-decoration: underline;
+                text-decoration-style:dotted;
+            }
+            .signup-text{
+                width: 200px;
+                display:flex;
+                justify-content: space-between;
+            }
+            .sign-up{
+                margin-top: 0px;
+                cursor: pointer;
+                width: 2px;
+                color: #00BFFF;
+                border: none;
+                background-color: white;
+            }
+            .sign-up:hover{
+                text-decoration:underline;
+            }
+            .login-button{
+                padding: 7px 20px;
+                font-size:medium;
+                margin-left: 5px;
+                color:#00BFFF ;
+                border-radius: 20px;
+                border-color:rgb(98, 187, 4) ;
+                background-color: white;
+                border: none;
+                transition: background-color 0.15s,color 0.15s;
+                border: 2px;
+                border-style: solid;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            .login-button:hover{
+                border: 2px;
+                border-style: solid;
+                border-color: white;
+                background-color: rgb(132, 248, 9);
+                color: white;
+                cursor: pointer;
+            }
+            .resize{
+                margin-top: 0px;
+            }
+            .title{
+                margin-bottom: 20px;
+                
+            }
+            .m{
+                margin-left: 100px;
+                
+                
+            }
+            p{
+                color: rgb(239, 239, 247);
+                font-weight: bolder;
+                margin-left: 130px;
+                margin-bottom: 0px;
+
+                
+                
+            }
+            .tabel{
+                margin-left: 50px;
+                margin-top: 30px;
+                color: aqua;
+
+            }
+            .pp{
+                
+                
+            }
+            .image{
+    height:150px;
+    border-radius: 50px;
+    width: 170px;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    
+    
+}
+            
+
+            
+                
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="logo">
+            <img class="image"src="{% static 'images/new.png' %}">
+    
+        </div>
+     
+        <div class="test">
+
+        </div>
+        <form class="form">
+            
+            <div class="login">
+                
+               <div class="title">
+                <p style="font-size: 50px;font-weight: bold;margin-bottom: 0px;">MVA</p><br>
+              <div class="pp">
+                <p style="font-size: 12px;margin-left: 120px;margin-top: 0px;font-family: Arial, Helvetica, sans-serif;">Motor Vehicle Assistance</p><br>
+
+              </div> 
+                
+                
+              
+                <div class="tabel">
+                    
+
+                  
+                    <table border="0px"  cellpadding="0" cellspacing="30">
+                        {% if user.is_authenticated %}
+        
+                        <tr>
+                            <td>Username</td>
+                            <td>{{user.username}}</td> 
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>{{user.email}}</td> 
+                        </tr>
+                        <tr>
+                            <td>UserID</td>
+                            <td>{{user.id}}</td> 
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>{{user.last_name}}</td> 
+                        </tr>
+                        {% endif%}
+                            </table>
+                            
+
+                </div>
+
+                
+               
+                    
+                
+                <div>
+                    
+                </div><br><br>
+                <div class="resize"> 
+                    
+                   
+            </div>
+            
+        </form>
+
+     
+       
+       
+    </body>
+</html>

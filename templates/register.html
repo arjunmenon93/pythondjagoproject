@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+     <style>
+    
+
+        
+
+
+
+           
+            
+
+            
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <div class="form">
+            <form action="{% url 'social' %}"  method="post">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="name"><br>
+                <input type="email" name="eemail" placeholder="email"><br>
+                <input type="number" name="phonenumber" placeholder="phonenumber"><br>
+                <input type="number" name="idnumber" placeholder="idnumber"><br>
+                <input type="password" name="password1" placeholder="password1"><br>
+                <input type="password" name="password2" placeholder="password2"><br>
+                <button type="submit">submit</button> 
+            
+                
+            </form>
+
+        </div>
+        
+        <div>
+            {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+        </div>
+    
+    </body>
+</html>

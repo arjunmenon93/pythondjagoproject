@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kleen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <style>
+            .header{
+                font-family: Roboto,Arial;
+                background-color:white;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                position: fixed;
+                height: 90px;
+                top:0;
+                right: 0;
+                left: 0;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: rgb(154, 221, 83);
+            }
+            .logo-section{
+                width: 350px;
+                display:flex;
+                align-items: center;
+            }
+            .logo{
+                width:200px;
+                padding-left: 25px;
+                padding-right:10px;
+                border-radius: 200px;
+            }
+            .navigation-section{
+                width: 800px;
+                display: flex;
+                justify-content: left;
+                align-items:flex-end;
+                margin-bottom: 5px;
+                flex:1;
+            }
+            .home-button, .services-button,.about-button{
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-left: 10px;
+                font-size:large;
+                font-weight: bold;
+                padding-right: 10px;
+                background-color:white;
+                color:rgb(154, 221, 83);
+                border: none;
+            }
+            .home-button:hover, .services-button:hover,.about-button:hover{
+                border-left-color: rgb(154, 221, 83);
+                border-left-style: solid;
+                border-left-width: 2px;
+                padding-left: 8px;
+                border-radius: 5px;
+                border-right-color: rgb(154, 221, 83);
+                border-right-style: solid;
+                border-right-width: 2px;
+                padding-right: 8px;
+                cursor: pointer;
+            }    
+            .home-button{
+                margin-left: 10px;
+            }
+            .login-section{  
+                width:200px ;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 50px;
+                position: relative;
+                flex-shrink: 0;
+            }
+            .login-button{
+                padding: 10px 25px;
+                font-size:medium;
+                margin-left: 5px;
+                color: rgb(154, 221, 83);
+                border-radius: 20px;
+                border-color:rgb(154, 221, 83) ;
+                background-color: white;
+                border: none;
+                transition: background-color 0.15s,color 0.15s;
+                border: 2px;
+                border-style: solid;
+            }
+            .login-button:hover{
+                border: 2px;
+                border-style: solid;
+                border-color: white;
+                background-color: rgb(154, 221, 83);
+                color: white;
+                cursor: pointer;
+            }
+            .signup-button{
+                padding: 10px 20px;
+                margin-left: 15px;
+                font-size:medium;
+                background-color: rgb(154, 221, 83);
+                border-radius: 20px;
+                border: none;
+                color: white;
+                border: 1px;
+                border-color:rgb(154, 221, 83) ;
+                border-style: solid;
+                transition: background-color 0.15s,color 0.15s;
+            }
+            .signup-button:hover{
+                border: 2px;
+                padding: 9px 19px;
+                color: rgb(154, 221, 83);
+                background-color: white;
+                border: 2px;
+                border-color:rgb(154, 221, 83) ;
+                border-style: solid;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-section">
+                <img class="logo" src="pictures/logo.png">
+            </div>
+            <div class="navigation-section">
+                <div>
+                    <input class="home-button" type="button" value="Home">      
+                </div>
+                <div>
+                    <input class="services-button" type="button" value="Services"> 
+                </div>
+                <div>
+                    <input class="about-button" type="button" value="About">
+                </div>
+            </div>
+            <div class="login-section">
+                <div>
+                    <a href="login.html"><input class="login-button" type="button" value="Login"></a>    
+                </div>
+                <div>
+                    <input class="signup-button" type="button" value="Sign Up">
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,420 @@
+{% load static %}
+<html>
+ <head>
+        <style>
+        .box{
+         display:flex;
+         flex-direction: row;
+         height:120px;
+         justify-content: center;
+         margin-bottom:60px;
+    
+    
+        }
+        .logo{
+         margin-left: 30px;
+         margin-top: 30px;
+    
+    
+    
+    
+        }
+         .item{
+         display:flex;
+    
+         margin-left: 800px;
+         flex:1;
+    
+        }
+        ul {
+        display: flex;
+        flex-direction: row;
+        font-size: medium;
+        align-items: end;
+        }
+        ul li{
+        list-style: none;
+        margin-left: 60px;
+        }
+        ul li a{
+        text-decoration: none;
+        color: rgb(8, 150, 221);
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        }
+        .full{
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("{% static 'images/pcar1.jpg' %}");
+        background-position: center;
+        background-size: cover;
+        height: 105vh;
+        
+
+        
+        }
+        .image{
+    height:150px;
+    border-radius: 50px;
+    width: 170px;
+        }
+        body{
+            margin:auto;
+            width:1519px;
+            background-color: black;
+            overflow-x: hidden;
+            
+
+        }
+    
+        .flex{
+        display: flex;
+        width: 1519px;
+        height:400px;
+        
+        
+        flex-direction: row;
+        justify-content: space-between;
+        margin:auto;
+        
+        }
+        .one{
+            width:600px;
+            height: 600px;
+            background-color:transparent;
+            margin: auto;
+            border:2px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: rgb(8, 150, 221);
+            
+            
+
+            
+            
+            
+            
+        }   
+
+            
+            
+            
+        
+        .text{
+            margin-top: 30px;
+            margin-left: 80px;
+            margin-bottom: px;
+            
+            height: 30px;
+            width: 250px;
+            border: 1.5px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 5px;
+            vertical-align: bottom;
+            background-color: transparent;
+            color:rgb(8, 150, 221);
+            font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            background-color: transparent;
+            
+
+            
+
+        }
+        .button{
+            height:30px;
+            width:60px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            margin-left: 15px;
+            background-color: transparent;
+            color:  rgb(65, 144, 223);
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        }
+        .check{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgb(8, 150, 221);
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin-bottom: 30px;
+            
+            
+            
+            
+        }
+            
+            
+            
+            
+            
+        
+
+        
+
+
+
+        .two{
+            width:500px;
+            height: 550px;
+            margin-top: 60px;
+            border:1px;
+            margin-right: 10px;
+            background-color: black;
+
+         border-style: solid;
+            border-radius: 10px;
+            border-color: rgb(8, 150, 221);
+
+                
+        }
+        .check1{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgb(8, 150, 221);
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin-bottom: 30px;
+            
+            
+
+        }
+        .container{
+            
+             border:1px solid rgb(91, 99, 186); width:500px; height: 280px; overflow-y: scroll;
+             margin-top: 40px;
+             background-color: transparent;
+             
+             margin-left: 80px;
+             border-radius: 10px;
+             cursor: pointer;
+             
+        }
+        .container::-webkit-scrollbar{
+            width: 0px;
+            
+        }
+        input[type="checkbox"]{
+            cursor: pointer;
+            
+            
+            
+        }
+        
+        
+        
+
+
+        .both{
+            margin-top: 0px;
+            
+        }
+        .truck{
+            width:100px;
+            height:100px;
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            border-radius: 10px;
+        }
+        .container1{
+            
+            border:2px solid rgb(91, 99, 186); width:400px; height: 280px; overflow-y: scroll;
+            margin-top: 30px;
+            background-color: black;
+            margin-left: 40px;
+            border-radius: 10px;
+             cursor: pointer;
+        }
+        .text1{
+
+            margin-top: 60px;
+            margin-left: 80px;
+            margin-bottom: 30px;
+            height: 30px;
+            width: 250px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 5px;
+            vertical-align: bottom;
+            background-color: transparent;
+            color:rgb(8, 150, 221);
+            font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            background-color: transparent;
+        
+            
+        }
+        .button1{
+            height:30px;
+            width:60px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            margin-left: 15px;
+            background-color: transparent;
+            color: blue;
+            
+        }
+        .licence{
+            width:100px;
+            height:50px;
+            margin-top: 30px;
+            margin-left: 35px;
+            margin-bottom: 0px;
+        }
+        .both1{
+            margin-top: 100px;
+        }
+        .c{
+            margin-left: 350px;
+            color: rgb(8, 150, 221);
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            
+            
+
+        }
+        .name{
+    color: rgb(8, 150, 221);
+    font-family: Arial;
+    font-weight: bold;
+}
+.z{
+    width: 30px;
+}
+.f{
+    color:rgb(65, 144, 223);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+    
+
+
+        
+
+        
+        
+
+        
+        
+
+        </style>
+     </head>
+        <body>
+            <div class="full">
+                <div class="box">
+        
+            
+                    <div class="logo">
+                        <img class="image"src="{% static 'images/new.png' %}">
+                
+                    </div>
+                    <div class="item">
+                        
+                            <ul>
+                                <li><a href="home">HOME</a></li>
+                                <li><a href="rto">RTO</a></li>
+                                <li><a href="rtosub">SUBCODE</a></li>
+                                <div class="name">
+                            
+                                    {% if user.is_authenticated %}
+                                   
+                                    <li> <a href="profile"><img  class="z" src="{% static 'images/imagehead.png' %}" alt="An image">{{user.username}}</a></li>
+                                    {% endif%}
+        
+                                </div>
+                                   
+                            
+                        
+                    
+                            </ul>
+                        
+                       
+                
+                    </div>
+                </div>
+             <div class="flex">
+                <div  class="one">
+                    
+                    <form  action="finealteration" method="POST"class="a">
+                        {% csrf_token %}
+                        
+                        
+                    
+                            <div class="both1">
+                                <input  class="text"type="text" name="registration" placeholder="kl/42/9290"required>
+                                <input  class="text"type="text" name="location" placeholder="location"oninvalid="this.setCustomValidity('location name  should contain only letters ')" oninput="this.setCustomValidity('')" pattern="[A-Za-z]{2,20}" required >
+                
+                                <button class="button" type="submit" >SUBMIT</button><br>
+                                <input class="c" type="checkbox"  name="unpaid" value="Unpaid" checked required>
+                                <label class="f" for="unpaid"> Unpaid</label>
+
+                            </div>
+                           
+                            <div class="container">
+                                <input class="check" type="checkbox" id="vehicle1" name="a" value="Air horns/1000">
+                                <label class="check" for="a"> Air horns/1000</label><br>
+                                <input class="check" type="checkbox" id="vehicle2" name="a" value="Fancy Number Plates/1000">
+                                <label  class="check"for="a">Fancy Number Plates/1000 </label><br>
+                                <input class="check" type="checkbox" id="vehicle3" name="a" value="Loud Aftermarket Exhausts/5000">
+                                <label class="check" for="a">Loud Aftermarket Exhausts/5000 </label><br>
+                                <input class="check" type="checkbox" id="vehicle1" name="a" value="Dark Sun Film (Window Tinting)/5000">
+                                <label class="check" for="a"> Dark Sun Film (Window Tinting)/5000</label><br>
+                                <input class="check" type="checkbox" id="vehicle2" name="a" value="Illegal HID Lights/1000">
+                                <label class="check" for="a"> Illegal HID Lights/1000</label><br>
+                                <input class="check" type="checkbox" id="vehicle3" name="a" value="Engine Swap/20000">
+                                <label class="check" for="a"> Engine Swap/20000</label><br>
+                                <input class="check" type="checkbox" id="vehicle1" name="a" value="Bull Bars/Crash Guards/1000">
+                                <label class="check" for="a"> Bull Bars/Crash Guards/1000</label><br>
+                                <input class="check" type="checkbox" id="vehicle2" name="a" value="Extra Wide Tyres/10000">
+                                <label  class="check"for="a">Extra Wide Tyres/10000 </label><br>
+                                <input class="check" type="checkbox" id="vehicle3" name="a" value="Body Lifting Kits/15000">
+                                <label class="check" for="a">Body Lifting Kits/15000 </label><br>
+                                <input class="check" type="checkbox" id="vehicle1" name="a" value="Illegal Swaping of vehicle colour/15000">
+                                <label class="check" for="a"> Illegal Swaping of vehicle colour/15000</label><br>
+                               
+                               
+    
+
+                            </div>
+                           
+                             
+                           
+                            
+    
+                    </form> 
+
+                </div>
+                
+                           
+                    
+                        
+                  
+
+
+                </div>
+             </div>
+            </div>
+            
+
+        </body>
+    
+</html>

@@ -1,0 +1,368 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+<style>
+.box{
+    display:flex;
+    flex-direction: row;
+    height:120px;
+    justify-content: center;
+    margin-bottom: 300px;
+    
+    
+    
+    
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    
+    
+    
+}
+.item{
+    display:flex;
+    
+    margin-left: 800px;
+    flex:1;
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    align-items: end;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(8, 150, 221);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.image{
+    height:150px;
+    border-radius: 50px;
+    width: 170px;
+}       
+
+
+
+
+.flex{
+            display: flex;
+            margin: auto;
+            
+            
+            
+            flex-direction: row;
+            justify-content: space-between;
+            
+            
+}
+        .one{
+            
+            width: 290px;
+            height: 250px;
+            background-color:transparent;
+
+            border: 2px;
+            border-color:rgb(65, 144, 223);
+            border-style: solid;
+            border-radius: 10px;
+            margin-left: 10px;
+
+            
+            
+        }
+        .search{
+            margin-top: 25px;
+            margin-left: 30px;
+            height: 40px;
+            width: 250px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: medium;
+            background-color: transparent;
+            color: rgb(65, 144, 223);
+            font-family: roboto+slab,arial;
+            
+            
+
+            
+            
+
+            
+        }
+        .search::placeholder{
+            font-family: roboto+slab,arial;
+            color: rgb(65, 144, 223);
+        }
+        
+            
+    
+        
+        .bt1{
+            height:35px;
+            width:70px;
+            margin-left: 200px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            font-size: small;
+            font-family:roboto+slab,arial;
+            
+            color: rgb(65, 144, 223);
+            cursor: pointer;
+            background-color: transparent;
+            margin-top: 38px;
+            
+            
+
+        }
+        .bt1:hover{
+            
+
+        }
+        p{
+            text-align: center;
+            font-family: roboto+slab,arial;
+            font-size: 17px;
+        
+            color: rgb(8, 115, 221);
+            
+        }
+        .truck{
+            width:200px;
+            height:100px;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+
+
+        
+            
+        
+        .two{
+            
+            width: 280px;
+            height: 250px;
+            background-color:transparent;
+            border: 2px;
+            border-color:rgb(8, 115, 221);
+            border-style: solid;
+            border-radius: 10px;
+            margin-right: 10px;
+            
+             
+        }
+        .search1{
+            margin-top: 25px;
+            margin-left: 20px;
+            height: 40px;
+            width: 250px;
+            border: 1px;
+            border-style: solid;
+            border-color: grey;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: medium;
+            background-color: transparent;
+            color: rgb(65, 144, 223);
+
+        }
+        .search1::placeholder{
+            font-family: roboto+slab,arial;
+            color: rgb(65, 144, 223);
+        
+
+        }
+        .bt2{
+            height:35px;
+            width:70px;
+            margin-left: 200px;
+            border: 1px;
+            border-style: solid;
+            background-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            font-size: small;
+            font-family:roboto+slab,arial;
+            background-color:transparent;
+            color: rgb(65, 144, 223);
+            cursor: pointer;
+            margin-top: 38px;
+             
+
+        } 
+        .licence{
+            width:200px;
+            height:100px;
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+        .full{
+             width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("{% static 'images/vechilecar1.jpg'%}");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+        }
+        body{
+            margin:auto;
+            
+        }
+        .show{
+            color: aqua;
+        }
+        .showlicence{
+            border: 1px;
+            border-style: solid;
+            height: 350px;
+            width:400px;
+            border-color: rgb(96, 117, 218);
+            font-family: 'Segoe UI';
+            margin-left: 20px;
+            background-color: black;
+            border-radius: 10px;
+            
+            
+            
+            
+        }
+        .name{
+           color: rgb(8, 150, 221);
+          font-family: Arial;
+          font-weight: bold;
+        }
+
+        .z{
+         width: 30px;
+        }
+        .mid{
+            margin-left: 950px;
+        }
+        .m{
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+    
+        
+      
+
+    </style>
+    <body>
+       
+        <div class="full">
+            <div class="m">
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+              </div>       
+            <div class="box">
+
+    
+                <div class="logo">
+                    <img class="image"src="{% static 'images/new.png' %}">
+            
+                </div>
+                <div class="item">
+                    
+                        <ul>
+                            <li><a href="home">HOME</a></li>
+                            <li><a href="rto">RTO</a></li>
+                            <li><a href="rtosub">SUBCODE</a></li>
+                            <li><a href="home">HOME</a></li>
+                            <div class="name">
+                            
+                                {% if user.is_authenticated %}
+                               
+                                <li> <a href="profile"><img  class="z" src="{% static 'images/imagehead.png' %}" alt="An image">{{user.username}}</a></li>
+                                {% endif%}
+    
+                            </div>
+                            
+                          
+
+                        </div>
+                
+                        </ul>
+                    
+                   
+            
+                </div> <div class="flex">
+                    <div class="one">
+                        <form action="{% url 'detailsvehicle' %}" method="post">
+                            {% csrf_token %}
+                            <img class="truck" src="{% static 'images/bluetruck.png' %}">
+                            <input class="search" type="text" placeholder="KL42R9290" name="registration">
+                            <button class="bt1" type="submit" >SUBMIT</button>
+        
+        
+                        </form>
+                     
+                        
+                    </div>
+                    
+                    <div class="mid">
+
+                    </div>
+                    
+        
+                    <div class="two">
+                        <form action="{% url 'details' %}" method="post">
+                            {% csrf_token %}
+                            <img class="licence" src="{% static 'images/bluelicence.png' %}">
+                            <input  class="search1"type="text" placeholder="HR3215545" name="licence">
+                            <button type="submit"class="bt2">SUBMIT</button> 
+                            
+        
+                        </form>
+
+
+            </div>
+        
+               
+              
+             
+                <div class="show">
+                    {% if m is filter %}
+                    <h1>{{m.Licenceid}}</h1>
+   
+                   {% endif%}
+
+                    
+
+                </div>
+               
+               
+               
+            </div>
+    
+           </div>
+          
+           
+          
+        </div>
+        
+      
+
+        
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+<style>
+.box{
+    display:flex;
+    flex-direction: row;
+    height:120px;
+    justify-content: center;
+    margin-bottom:100px;
+    
+    
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    
+    
+}
+.item{
+    display:flex;
+    
+    margin-left: 800px;
+    flex:1;
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    align-items: end;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(8, 150, 221);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.image{
+    height:150px;
+    border-radius: 50px;
+    width: 170px;
+}       
+
+
+
+
+.flex{
+            display: flex;
+            margin-top: 350px;
+            
+            flex-direction: row;
+            justify-content: space-between;
+}
+        .one{
+            
+            width: 500px;
+            height: 250px;
+            background-color:transparent;
+            border: 1px;
+            border-color:rgb(65, 144, 223);
+            border-style: solid;
+            border-radius: 10px;
+            margin-left: 30px;
+
+            
+            
+        }
+        .search{
+            margin-top: 100px;
+            margin-left: 50px;
+            height: 40px;
+            width: 250px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: medium;
+            background-color: transparent;
+            color: rgb(65, 144, 223);
+            font-family: roboto+slab,arial;
+            
+
+            
+            
+
+            
+        }
+        .search::placeholder{
+            font-family: roboto+slab,arial;
+            color: rgb(65, 144, 223);
+        }
+        
+            
+    
+        
+        .bt1{
+            height:35px;
+            width:70px;
+            margin-left: 60px;
+            border: 1px;
+            border-style: solid;
+            border-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            font-size: small;
+            font-family:roboto+slab,arial;
+            
+            color: rgb(65, 144, 223);
+            cursor: pointer;
+            background-color: transparent;
+            
+
+        }
+        .bt1:hover{
+            
+
+        }
+        h1{
+            text-align: center;
+            font-family: roboto+slab,arial;
+        
+            color: rgb(8, 115, 221);
+            
+        }
+
+
+        
+            
+        
+        .two{
+            
+            width: 500px;
+            height: 250px;
+            background-color:transparent;
+            border: 2px;
+            border-color:rgb(8, 115, 221);
+            border-style: solid;
+            border-radius: 10px;
+            margin-right: 30px;
+             
+        }
+        .search1{
+            margin-top: 50px;
+            margin-left: 50px;
+            height: 40px;
+            width: 250px;
+            border: 1px;
+            border-style: solid;
+            border-color: grey;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: medium;
+            background-color: transparent;
+            color: rgb(65, 144, 223);
+
+        }
+        .search1::placeholder{
+            font-family: roboto+slab,arial;
+            color: rgb(65, 144, 223);
+        
+
+        }
+        .bt2{
+            height:35px;
+            width:70px;
+            margin-left: 60px;
+            border: 1px;
+            border-style: solid;
+            background-color: rgb(65, 144, 223);
+            border-radius: 2px;
+            font-size: small;
+            font-family:roboto+slab,arial;
+            background-color:transparent;
+            color: rgb(65, 144, 223);
+            cursor: pointer;
+             
+
+        } 
+        .full{
+             width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(light.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+        }
+        body{
+            margin:auto;
+        }
+    
+        
+      
+
+    </style>
+    <body>
+        <div class="full">
+            <div class="box">
+
+    
+                <div class="logo">
+                    <img class="image"src="new.png">
+            
+                </div>
+                <div class="item">
+                    
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">RTO</a></li>
+                            <li><a href="#">FINE</a></li>
+                            <li><a href="#">OFFENCE</a></li>
+                
+                        </ul>
+                    
+                   
+            
+                </div>
+            </div>
+           <div class="flex">
+            <div class="one">
+                <h1></h1>
+                <input class="search" type="search" placeholder="KL42R9290">
+                <input class="bt1" type="button" value="SUBMIT">
+            </div>
+            <div class="two">
+                <h1><em>LICENCE</em></h1>
+                <input  class="search1"type="search" placeholder="HR3215545">
+                <input class="bt2" type="button" value="SUBMIT"> 
+            </div>
+    
+           </div> 
+            
+        </div>
+       
+
+        
+    </body>
+</html>

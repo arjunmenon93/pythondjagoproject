@@ -1,0 +1,156 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            .form{
+                width: 500px;
+                height:620px;
+                background-color:rgb(8, 150, 221);
+                margin:auto;
+                margin-top: 110px;
+                border-radius: 10px;
+                
+                
+                
+            }
+            body{
+                background-color: black;
+            }
+            .objects{
+                margin:auto;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .two{
+                
+                background-color: #fff;
+                margin: 10px;
+                border: 1.5px solid rgb(200, 200, 200);
+                width: 210px;
+                padding: 6px 20px;
+                border-radius: 5px;
+                 text-align: center;
+                 
+                 font-family: 'Segoe UI';
+                 font-size: 15px;
+                 
+                 
+            }
+            .label{
+                font-family: 'Sego UI';
+            
+
+                
+            }
+            h2{
+                font-family: 'Segoe UI'; 
+                font-size: 50px; 
+                color:white ;
+                
+                
+                
+
+            }
+            button{
+                width: 80px;
+                height:30px;
+                border: 1px;
+                border-style: solid;
+                border-radius: 8px;
+                border-color: white;
+                cursor: pointer;
+                color: grey;
+            
+            }
+            .message{
+                
+                font-family: 'Sego UI';
+                
+                color: rgb(212, 212, 237);
+                
+                
+                
+                
+                
+                margin-left: 100px;
+                margin-top: 0px;
+            }
+            p{
+                font-size: medium;
+            }
+            body{
+                background-color: azure;
+            }
+           
+            
+                
+                
+
+            
+
+        </style>
+         
+        
+            
+
+        
+
+
+
+        <div class="form">
+            <form action="{% url 'new' %}"  method="post">
+
+                {% csrf_token %}
+                    
+                
+                
+                <div class="objects">
+                <h2>Sign up</h2>
+                
+                <input type="text" name="user_name" placeholder="Name"class="two"oninvalid="this.setCustomValidity('user name should contain only letters ')" oninput="this.setCustomValidity('')" pattern="[A-Za-z]{2,20}" required ><br>
+                
+                
+                <input  type="email"  name="email" placeholder="Email"class="two" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br>
+                
+                <input type="text" name="id" placeholder="Idnumber"class="two" oninvalid="this.setCustomValidity('ID must be of length 6-8 and should contain only letters and digits')" oninput="this.setCustomValidity('')" pattern="[A-Za-z0-9]{6,8}" required ><br>
+                
+                <input type="password" name="password1" placeholder="Password"class="two" oninvalid="this.setCustomValidity('Password must be of length 6-8 and should contain only smaller case letters')" oninput="this.setCustomValidity('')" pattern="[a-z]{6,8}" required ><br>
+                
+                <input type="password" name="password2" placeholder="Confirm password"class="two"required><br>
+                <button type="submit">SUBMIT</button> 
+                </div>
+                
+                
+               
+            </form>
+
+
+            <div class="message">
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+              </div>  
+                
+
+            
+
+               
+        </div>    
+                
+
+     
+        
+
+          
+
+        
+          
+    
+    </body>
+</html>
